@@ -1,0 +1,11 @@
+.container{
+    display: flex;
+}
+.box{
+    display: flex;
+    padding: 10%;
+}
+#background{
+    background: skyblue;
+    border-radius: 20px;
+}

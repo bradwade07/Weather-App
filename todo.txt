@@ -1,0 +1,7 @@
+TODO:
+
+-Weather App
+-Clock App
+-Calendar App
+-Todo App
+-Calendar and Todo integration
