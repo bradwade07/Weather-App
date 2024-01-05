@@ -1,0 +1,7 @@
+TODO:
+
+-Clock App
+-Calendar App
+-Todo App
+-Calendar and Todo integration
+-remove api key

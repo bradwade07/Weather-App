@@ -1,0 +1,45 @@
+.container{
+    display: flex;
+}
+.weatherbox{
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+}
+#background{
+    background: skyblue;
+    border-radius: 20px;
+}
+#location{
+    border-radius: 20px;
+    padding: 5px;
+}
+
+#doodle{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+#doodle img{
+    width: 100px;
+    height: auto;
+    
+}
+#temperature{
+    text-align: center;
+    font-size: 100px;
+}
+#locationname{
+    text-align: center;
+    font-size: 200%;
+}
+.humandap{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+}
+.humandap img{
+    width: 50px;
+    height: auto;
+}
