@@ -11,12 +11,29 @@
         <h1>The Weather App</h1>
     </header>
     <div class="container">
-        <div id="background" class="box">
-            <div class="boxlet">
-                <img src="" alt="">
+        <div id="background" class="weatherbox">
+            <div class="boxlet search">
+                <input type="text" id="location" placeholder="location">
+                <button id="searchbtn""> SEARCH</button>
+            </div>
+            <div class="boxlet" id="doodle"">
+                <img src="" alt="" id="main">
+                <h1 id="description"></h1>
+            </div>
+            <div class="boxlet" id="temperature"></div>
+            <div class="boxlet" id="locationname"></div>
+            <div class="boxlet" id="humandap">
+                <div class="humandap" id="humidity">
+                    <img src="./img/nature.png" alt="humidity">
+                    <h2></h2>
+                </div>
+                <div class="humandap" id="airpressure">
+                    <img src="./img/airpressure.png" alt="air pressure">
+                    <h2></h2>
+                </div>
             </div>
         </div>
     </div>
-    
 </body>
+<script src="./scripts/script.js"></script>
 </html>
