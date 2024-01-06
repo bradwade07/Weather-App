@@ -15,7 +15,7 @@ class InfoList{
         document.querySelector("#main").setAttribute("src","https://openweathermap.org/img/wn/" + this.doodleVar + "@4x.png");
         document.querySelector("#main").setAttribute("alt",this.doodleVar);
         document.querySelector("#description").innerHTML = this.descVar;
-        document.querySelector("#temperature").innerHTML = this.tempVar;
+        document.querySelector("#temperature").innerHTML = this.tempVar + "°C";
         document.querySelector("#locationname").innerHTML = this.cityVar + ", " + this.countryVar;
         document.querySelector("#humidity h2").innerHTML = this.humidityVar + "%";
         document.querySelector("#airpressure h2").innerHTML = this.airpressureVar + " kPa";
@@ -29,8 +29,13 @@ function afterEventListener(loc){
 }
 
 function updateInfoList(data){
-    infoList = new InfoList(data.weather[0].icon,data.weather[0].description, (Math.round(data.main.temp)).toString(), data.name, data.sys.country, data.main.humidity.toString(), (data.main.pressure/100).toString());
+    if((data.cod).toString() === "404"){
+        alert("Error 404! City not Found.");
+    }
+    else if((data.cod).toString() === "200"){
+        infoList = new InfoList(data.weather[0].icon,data.weather[0].description, (Math.round(data.main.temp)).toString(), data.name, data.sys.country, data.main.humidity.toString(), (data.main.pressure/100).toString());
     infoList.showData();
+    }
 }
 //main
 var infoList
