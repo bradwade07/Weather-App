@@ -1,45 +1,65 @@
-.container{
+#main_container{
     display: flex;
 }
-.weatherbox{
+.weather_container{
+    display: flex;
+    border: solid red 1px;
+}
+.weather_box{
     padding: 30px;
     width: 300px;
     height: 400px;
 }
-#background{
+#weather_background{
     background: skyblue;
     border-radius: 20px;
 }
-#location{
+#weather_location{
     border-radius: 20px;
     padding: 5px;
 }
 
-#doodle{
+#weather_doodle{
     display: flex;
     justify-content: space-around;
     align-items: center;
 }
-#doodle img{
+#weather_doodle img{
     width: 100px;
     height: auto;
     
 }
-#temperature{
+#weather_temperature{
     text-align: center;
     font-size: 100px;
 }
-#locationname{
+#weather_locationname{
     text-align: center;
     font-size: 200%;
 }
-.humandap{
+.weather_humandap{
     display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: center;
 }
-.humandap img{
+.weather_humandap img{
     width: 50px;
     height: auto;
+}
+.clock_container{
+    display: flex;
+}
+.clock_box{
+    padding: 30px;
+    width: 300px;
+    height: 400px;
+}
+#clock_background{
+    background: grey;
+    border-radius: 20px;
+}
+#clock_location{
+    border-radius: 20px;
+    padding: 5px;
 }
