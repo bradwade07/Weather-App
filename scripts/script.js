@@ -1,6 +1,6 @@
 ///////////////////////////////////////////////////////////////////
 // Weather App
-const apiKey = "50e945400c8db430844c7fc3bc1fcd0c"; // get api key from "https://openweathermap.org/
+const apiKey = ""; // get api key from "https://openweathermap.org/
 const searchBtn = document.querySelector("#searchbtn");
 
 class WeatherInfoList{
